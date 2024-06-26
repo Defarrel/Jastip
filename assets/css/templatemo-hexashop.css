@@ -44,6 +44,10 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -2377,4 +2381,52 @@ responsive
   100% {
     opacity: 0;
   }
+}
+
+/* Style Status Produk */
+
+table {
+  margin-left: 21%;
+  margin-top: 150px;
+  border-collapse: collapse; 
+  width: 150px; 
+  max-width: 900px;
+  table-layout: fixed;
+  min-width: 100px;
+  border: 1px solid;
+}
+.table img {
+  margin-left: 3%;
+  width: 50%; 
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  font-size: 15px;
+}
+
+th, td {    
+  border-bottom: 1px solid #ddd; 
+  padding: 8px;
+  text-align: center; 
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+.btn {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn-ready {
+  background-color: black;
 }
